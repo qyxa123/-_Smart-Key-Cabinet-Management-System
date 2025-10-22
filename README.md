@@ -35,10 +35,9 @@ Work in teams to design and implement a webpage interface for managing key borro
     *   The team leader must create a public repository on Gitee and add all team members as collaborators.
     *   The repository must have a clear `README.md` file describing the project purpose, team member roles, and setup/run instructions.
 2.  **Collaboration Process Demonstration:**
-    *   Each member **must** create their own feature branch for development. **Direct commits** to the `main` or `master` branch are prohibited.
-    *   Code must be merged into the main branch via **Pull Requests**, requiring **code review** by at least one other team member.
+    *   Each member **must** have their own contributions. 
 3.  **Workload Visibility:**
-    *   Final grading will **heavily reference the Gitee repository's "Contribution Graph"** and **commit history**. Each member's commit activity should reflect their participation level.
+    *   Final grading will  reference the Gitee repository's "Contribution Graph"** and **commit history**. Each member's commit activity should reflect their participation level.
 
 **Part 2: Interface Design & Implementation (70% of grade)**
 
@@ -69,7 +68,7 @@ Submit the following before the deadline:
 
 ### **4. Guidelines for Using AI Assistance**
 
-We encourage exploration and use of new technologies. For this assignment, you may use AI tools (e.g., GitHub Copilot, ChatGPT) for assistance.
+We encourage exploration and use of new technologies. For this assignment, you may use AI tools (e.g., GitHub Copilot, deepseek, chatgpt, claude) for assistance.
 
 *   **Permitted Use Cases:** Generating code skeletons, answering technical questions, providing color scheme suggestions, optimizing code structure, etc.
 *   **Important Principles:**
@@ -87,7 +86,7 @@ We encourage exploration and use of new technologies. For this assignment, you m
 | :--- | :--- | :--- |
 | **Git Collaboration (30%)** | Proper Gitee repository management, clear branching model, active commit history, contribution graph shows full team participation. | 30% |
 | **Interface Design (30%)** | Logical workflow, aesthetically pleasing and usable interface, coordinated color scheme, creative design. | 30% |
-| **Technical Implementation (30%)** | Clean HTML/CSS code, meets technical requirements (including 2+ form controls), correct page linking. | 30% |
+| **Technical Implementation (30%)** | Clean HTML/CSS code, meets technical requirements (including 2+ form control elements), correct page linking. | 30% |
 | **Project Report (10%)** | Well-structured report, clear work division, thorough explanations, sufficient supporting screenshots. | 10% |
 
 Wishing you all successful collaboration and productive learning!
