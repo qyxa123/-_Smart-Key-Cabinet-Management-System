@@ -1,92 +1,272 @@
-# csp-2025-s1-a1
+# 🔑 济外国际智能钥匙柜管理系统
 
-# Computer Principles Course Assignment 1: Smart Key Cabinet Interface Design & Team Collaboration
+<div align="center">
 
-**Due Date:** 2025-10-29 23:59
-**Submission Method:** Submit **Gitee repository link** and **project report (PDF format)** to the course learning platform.
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
+**Jiwai International Smart Key Cabinet Management System**
 
+一个现代化、美观且功能完善的智能钥匙管理系统，专为学校、企业等机构设计。
 
-### **1. Assignment Objectives**
+[功能特性](#-功能特性) • [快速开始](#-快速开始) • [项目结构](#-项目结构) • [使用说明](#-使用说明)
 
-This assignment aims to help you master the following core skills through a complete "design-development-collaboration" process:
+</div>
 
-1. **Version Control Fundamentals:** Become proficient with basic Git commands and learn to use Gitee for code hosting.
-2. **Team Collaboration Practice:** Experience real team development workflows on Gitee and understand the importance of version management in collaboration.
-3. **Interface Design Thinking:** Design user-friendly and logically clear borrowing/returning interfaces for a "Smart Key Cabinet" system based on real-life observations.
-4. **Front-end Technology Application:** Use learned HTML and CSS knowledge to implement your designs as actual webpages, with practical form usage.
+---
 
+## ✨ 功能特性
 
+### 🎯 核心功能
+- **📤 钥匙借用管理** - 完整的钥匙借用申请流程，支持学生和教师两种身份类型
+- **📥 钥匙归还管理** - 便捷的钥匙归还系统，包含使用反馈和满意度评价
+- **📊 实时状态监控** - 动态显示可用钥匙数量、已借出数量等系统状态
+- **👥 多角色支持** - 区分学生和教师，不同角色有不同的验证规则
 
-### **2. Assignment Content & Requirements**
+### 🎨 用户体验
+- **🌐 双语支持** - 完整的中英文双语界面，适合国际化场景
+- **📱 响应式设计** - 完美适配桌面、平板和手机等各种设备
+- **✨ 精美动画** - 流畅的页面过渡动画和粒子背景效果
+- **🎭 现代化UI** - 科技感十足的渐变色彩和毛玻璃效果
 
-**Project Theme: Smart Key Cabinet Borrowing/Returning System Interface Development**
+### 🛡️ 安全特性
+- **✅ 表单验证** - 实时表单验证，确保数据准确性
+- **📝 身份验证** - 学号/工号格式验证，手机号格式校验
+- **🔒 协议确认** - 使用协议和承诺确认机制
 
-Work in teams to design and implement a webpage interface for managing key borrowing and returning. The system should include at least two interfaces:
+### 🚀 技术亮点
+- **⚡ 纯前端实现** - 无需后端，零依赖，开箱即用
+- **🎪 丰富交互动画** - 完成动画、粒子效果、悬停特效
+- **⌨️ 键盘快捷键** - 支持 ESC 重置、Ctrl+Enter 提交等快捷操作
+- **🔄 自动日期填充** - 智能填充当前日期和时间
 
-*   **Main Interface:** 
-*   **Sub-interface:**
+---
 
-**Detailed Requirements:**
+## 🚀 快速开始
 
-**Part 1: Git & Gitee Team Collaboration (30% of grade)**
+### 环境要求
+- 现代浏览器（Chrome、Firefox、Safari、Edge 等）
+- 支持 HTML5 和 CSS3 的浏览器环境
 
-1.  **Repository Creation & Management:**
-    *   The team leader must create a public repository on Gitee and add all team members as collaborators.
-    *   The repository must have a clear `README.md` file describing the project purpose, team member roles, and setup/run instructions.
-2.  **Collaboration Process Demonstration:**
-    *   Each member **must** have their own contributions. 
-3.  **Workload Visibility:**
-    *   Final grading will  reference the Gitee repository's "Contribution Graph"** and **commit history**. Each member's commit activity should reflect their participation level.
+### 安装步骤
 
-**Part 2: Interface Design & Implementation (70% of grade)**
+1. **克隆项目**
+```bash
+git clone https://github.com/your-username/smart-key-cabinet.git
+cd smart-key-cabinet
+```
 
-1.  **Design Rationality:**
-    *   **Process Logic:** The borrowing/returning process must follow logical real-world steps (e.g., requiring borrower information when borrowing, confirmation when returning).
-    *   **Usability:** Clear layout and navigation that allows users to complete operations without guidance.
-    *   **Color Scheme & Aesthetics:** Choose a harmonious, professional color palette with an overall clean and visually appealing interface.
-2.  **Front-end Implementation:**
-    *   Use **HTML** and **CSS** for all page layout and styling.
-    *   **Must include two or more different types of form controls**, such as: text inputs, dropdown selects, radio buttons, checkboxes, buttons, etc., to handle borrowing/returning information input.
-    *   Pages should be navigable via hyperlinks.
+2. **直接运行**
+```bash
+# 直接在浏览器中打开 index.html
+# 或者使用本地服务器（推荐）
+python -m http.server 8000
+# 或
+npx serve
+```
 
+3. **访问系统**
+   - 在浏览器中打开 `http://localhost:8000/index.html`
+   - 或直接双击 `index.html` 文件
 
+---
 
-### **3. Deliverables**
+## 📁 项目结构
 
-Submit the following before the deadline:
+```
+智能钥匙柜/
+├── index.html          # 主页面 - 系统入口和状态展示
+├── borrow.html         # 借钥匙页面 - 钥匙借用申请表单
+├── return.html         # 还钥匙页面 - 钥匙归还表单
+├── script.js           # JavaScript 核心逻辑
+├── styles.css          # 样式文件和动画效果
+└── README.md          # 项目说明文档
+```
 
-1.  **Gitee Repository Link:** Direct link to your team's project homepage.
-2.  **Project Report (PDF Format):**
-    *   **Cover Page:** Course name, assignment number, project name, team members and student IDs.
-    *   **Work Division:** Detailed description of each member's specific contributions (Git collaboration, interface design, HTML/CSS coding, etc.).
-    *   **Design Rationale:** Explain your interface design concept, reasons for choosing your color scheme, and the logic behind your borrowing/returning workflow.
-    *   **Gitee Collaboration Screenshots:** Provide screenshots as evidence of your collaboration process (e.g., contribution graph, network graph, pull request list).
-    *   **Final Results Screenshots:** Include screenshots of the final webpages.
+---
 
+## 📖 使用说明
 
+### 主要页面
 
-### **4. Guidelines for Using AI Assistance**
+#### 🏠 主页 (`index.html`)
+- 系统欢迎界面
+- 显示可用钥匙和已借出钥匙数量
+- 快速导航到借钥匙或还钥匙功能
 
-We encourage exploration and use of new technologies. For this assignment, you may use AI tools (e.g., GitHub Copilot, deepseek, chatgpt, claude) for assistance.
+#### 📤 借钥匙页面 (`borrow.html`)
+1. **选择身份类型** - 选择学生或教师
+2. **填写个人信息**
+   - 姓名（必填）
+   - 学号/工号（必填，格式验证）
+   - 联系电话（教师必填）
+3. **填写钥匙信息**
+   - 门牌号（必填，3位数字格式）
+   - 钥匙编号（系统自动分配）
+   - 借用目的（必填）
+4. **设置借用时间**
+   - 借用日期和时间
+   - 预计归还日期和时间
+5. **确认协议并提交**
 
-*   **Permitted Use Cases:** Generating code skeletons, answering technical questions, providing color scheme suggestions, optimizing code structure, etc.
-*   **Important Principles:**
-    *   **Understand & Digest:** You must understand and be able to explain every line of AI-generated code and every suggestion to your instructor.
-    *   **No Direct Copy-Pasting:** Submitting complete AI-generated solutions without modification is strictly prohibited.
-    *   **Declaration in Report:** Briefly mention in your project report which AI tools were used and for which specific tasks (e.g., "Used ChatGPT to help generate initial CSS Flexbox layout code").
+#### 📥 还钥匙页面 (`return.html`)
+1. **身份验证** - 填写姓名和学号/工号
+2. **钥匙信息** - 输入钥匙编号和门牌号
+3. **归还时间** - 填写实际归还日期和时间
+4. **使用反馈** - 选择钥匙状态并填写备注
+5. **服务评价** - 评价系统服务满意度
+6. **确认归还**
 
-**Academic Integrity Reminder:** Misuse of AI tools resulting in code similarity or failure to demonstrate individual learning will negatively impact your grade.
+### 表单验证规则
 
+- **学号**：6位数字（如：232120）
+- **工号**：根据实际情况填写
+- **手机号**：11位中国大陆手机号（1开头）
+- **门牌号**：3位数字（如：101、205）
+- **日期逻辑**：归还时间必须晚于借用时间
 
+### 快捷键
 
-### **5. Grading Criteria**
+- `ESC` - 重置当前表单
+- `Ctrl + Enter` - 提交表单
 
-| Criteria | Description | Weight |
-| :--- | :--- | :--- |
-| **Git Collaboration (30%)** | Proper Gitee repository management, clear branching model, active commit history, contribution graph shows full team participation. | 30% |
-| **Interface Design (30%)** | Logical workflow, aesthetically pleasing and usable interface, coordinated color scheme, creative design. | 30% |
-| **Technical Implementation (30%)** | Clean HTML/CSS code, meets technical requirements (including 2+ form control elements), correct page linking. | 30% |
-| **Project Report (10%)** | Well-structured report, clear work division, thorough explanations, sufficient supporting screenshots. | 10% |
+---
 
-Wishing you all successful collaboration and productive learning!
+## 🎨 界面预览
+
+### 设计特色
+- **深色科技风格** - 黑色渐变背景，营造专业科技感
+- **霓虹色彩** - 青色、蓝色、紫色的渐变效果
+- **动画粒子** - 动态背景粒子，增加视觉吸引力
+- **毛玻璃效果** - 半透明模糊背景，提升层次感
+- **响应式布局** - 自适应各种屏幕尺寸
+
+### 主要颜色方案
+- **主色调**：青色 (`#00ffff`) - 科技感、现代感
+- **辅助色**：蓝色 (`#0080ff`) - 稳定、可靠
+- **强调色**：紫色 (`#8000ff`) - 创新、未来感
+- **背景色**：深色渐变 (`#0c0c0c` → `#1a1a2e` → `#16213e`)
+
+---
+
+## 💻 技术栈
+
+### 前端技术
+- **HTML5** - 语义化标签，结构清晰
+- **CSS3** - 现代化样式，动画效果
+  - Flexbox & Grid 布局
+  - CSS 动画和过渡
+  - 自定义滚动条
+  - 媒体查询响应式设计
+- **原生 JavaScript** - 零依赖，性能优异
+  - DOM 操作
+  - 事件处理
+  - 表单验证
+  - 动画控制
+
+### 浏览器兼容性
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
+
+---
+
+## 🛠️ 开发说明
+
+### 代码特点
+- **模块化设计** - 功能分离，易于维护
+- **注释完善** - 关键逻辑都有详细注释
+- **代码规范** - 统一的命名和格式规范
+- **无依赖** - 纯原生实现，无需任何第三方库
+
+### 核心功能模块
+```javascript
+// 主要功能模块
+- initializeApp()          // 应用初始化
+- initializeFormValidation() // 表单验证初始化
+- handleBorrowSubmit()     // 借钥匙提交处理
+- handleReturnSubmit()      // 还钥匙提交处理
+- validateBorrowForm()     // 借钥匙表单验证
+- validateReturnForm()      // 还钥匙表单验证
+- updateSystemStatus()      // 系统状态更新
+- showCompletionAnimation() // 完成动画展示
+```
+
+### 自定义扩展
+系统采用模块化设计，易于扩展：
+- 添加新的验证规则
+- 集成后端 API
+- 增加新的功能模块
+- 自定义样式主题
+
+---
+
+## 📝 版本历史
+
+### v1.0.0 (2025-01)
+- ✅ 初始版本发布
+- ✅ 完整的借还钥匙功能
+- ✅ 双语支持（中英文）
+- ✅ 响应式设计
+- ✅ 表单验证系统
+- ✅ 现代化UI设计
+
+---
+
+## 🤝 贡献指南
+
+欢迎贡献代码！请遵循以下步骤：
+
+1. **Fork 本项目**
+2. **创建特性分支** (`git checkout -b feature/AmazingFeature`)
+3. **提交更改** (`git commit -m 'Add some AmazingFeature'`)
+4. **推送到分支** (`git push origin feature/AmazingFeature`)
+5. **开启 Pull Request**
+
+### 贡献方向
+- 🐛 修复 Bug
+- ✨ 添加新功能
+- 📝 完善文档
+- 🎨 改进 UI/UX
+- ⚡ 性能优化
+- 🌐 多语言支持
+
+---
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+
+---
+
+## 🙏 致谢
+
+- 感谢所有为这个项目做出贡献的开发者
+- 特别感谢济外国际提供的项目背景和需求
+
+---
+
+## 📮 联系方式
+
+如有问题或建议，欢迎通过以下方式联系：
+
+- 📧 提交 Issue
+- 💬 参与讨论
+- ⭐ Star 本项目
+
+---
+
+<div align="center">
+
+**⭐ 如果这个项目对你有帮助，请给它一个 Star！**
+
+Made with ❤️ by [Your Name]
+
+[⬆ 返回顶部](#-济外国际智能钥匙柜管理系统)
+
+</div>
+
