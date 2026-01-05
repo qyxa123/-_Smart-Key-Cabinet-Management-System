@@ -1,4 +1,5 @@
 # 🔑 济外国际智能钥匙柜管理系统
+# 🔑 Jiwai International Smart Key Cabinet Management System
 
 <div align="center">
 
@@ -8,11 +9,17 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-**Jiwai International Smart Key Cabinet Management System**
+**济外国际智能钥匙柜管理系统**
 
 一个现代化、美观且功能完善的智能钥匙管理系统，专为学校、企业等机构设计。
 
+**Jiwai International Smart Key Cabinet Management System**
+
+A modern, elegant, and fully featured smart key management system designed for schools, enterprises, and similar organizations.
+
 [功能特性](#-功能特性) • [快速开始](#-快速开始) • [项目结构](#-项目结构) • [使用说明](#-使用说明)
+
+[Features](#-features) • [Getting Started](#-getting-started) • [Project Structure](#-project-structure) • [Usage Guide](#-usage-guide)
 
 </div>
 
@@ -43,6 +50,31 @@
 - **⌨️ 键盘快捷键** - 支持 ESC 重置、Ctrl+Enter 提交等快捷操作
 - **🔄 自动日期填充** - 智能填充当前日期和时间
 
+## ✨ Features
+
+### 🎯 Core Functionality
+- **📤 Borrow Management** - Complete request flow for students and teachers
+- **📥 Return Management** - Smooth return process with feedback and satisfaction survey
+- **📊 Live Status Monitoring** - Dynamic counts of available and borrowed keys
+- **👥 Multi-role Support** - Separate validation rules for students and teachers
+
+### 🎨 User Experience
+- **🌐 Bilingual UI** - Full Chinese/English support for global scenarios
+- **📱 Responsive Design** - Fits desktops, tablets, and phones
+- **✨ Smooth Animations** - Polished transitions with particle effects
+- **🎭 Modern UI** - Futuristic gradients and glassmorphism aesthetics
+
+### 🛡️ Security
+- **✅ Form Validation** - Real-time validation to ensure data accuracy
+- **📝 Identity Checks** - Student/teacher ID and phone number validation
+- **🔒 Agreement Acknowledgement** - Usage agreement confirmations
+
+### 🚀 Technical Highlights
+- **⚡ Pure Frontend** - Zero backend, zero dependencies
+- **🎪 Rich Interactions** - Completion animations, particles, and hover effects
+- **⌨️ Keyboard Shortcuts** - ESC reset, Ctrl+Enter submit, and more
+- **🔄 Auto Date Fill** - Smart fill for current date and time
+
 ---
 
 ## 🚀 快速开始
@@ -72,6 +104,33 @@ npx serve
    - 在浏览器中打开 `http://localhost:8000/index.html`
    - 或直接双击 `index.html` 文件
 
+## 🚀 Getting Started
+
+### Requirements
+- Modern browser (Chrome, Firefox, Safari, Edge, etc.)
+- Browser environment with HTML5 and CSS3 support
+
+### Installation
+
+1. **Clone the repo**
+```bash
+git clone https://github.com/your-username/smart-key-cabinet.git
+cd smart-key-cabinet
+```
+
+2. **Run locally**
+```bash
+# Open index.html directly in the browser
+# Or start a local server (recommended)
+python -m http.server 8000
+# Or
+npx serve
+```
+
+3. **Open the app**
+   - Visit `http://localhost:8000/index.html`
+   - Or double-click `index.html`
+
 ---
 
 ## 📁 项目结构
@@ -86,11 +145,21 @@ npx serve
 └── README.md          # 项目说明文档
 ```
 
+## 📁 Project Structure
+
+```
+Smart Key Cabinet/
+├── index.html          # Main page - system entry and status
+├── borrow.html         # Borrow page - request form
+├── return.html         # Return page - return form
+├── script.js           # Core JavaScript logic
+├── styles.css          # Styles and animations
+└── README.md           # Documentation
+```
+
 ---
 
 ## 📖 使用说明
-
-### 主要页面
 
 #### 🏠 主页 (`index.html`)
 - 系统欢迎界面
@@ -121,34 +190,37 @@ npx serve
 6. **确认归还**
 
 ### 表单验证规则
+- 必填项会在表单中高亮提示
+- 学生/教师的学号/工号格式验证
+- 教师需填写并验证手机号
+- 门牌号需为 3 位数字
 
-- **学号**：6位数字（如：232120）
-- **工号**：根据实际情况填写
-- **手机号**：11位中国大陆手机号（1开头）
-- **门牌号**：3位数字（如：101、205）
-- **日期逻辑**：归还时间必须晚于借用时间
+## 📖 Usage Guide
 
-### 快捷键
+#### 🏠 Home (`index.html`)
+- Welcome screen with quick links to borrow/return
+- Displays available and borrowed key counts
 
-- `ESC` - 重置当前表单
-- `Ctrl + Enter` - 提交表单
+#### 📤 Borrow (`borrow.html`)
+1. **Select role** – Student or Teacher
+2. **Fill personal info** – Name, ID, and phone (for teachers)
+3. **Enter key info** – Room number (3 digits) and purpose; key ID auto-assigned
+4. **Set time** – Borrow and expected return datetime
+5. **Acknowledge agreement** and submit
 
----
+#### 📥 Return (`return.html`)
+1. **Verify identity** – Name and ID
+2. **Key details** – Key ID and room number
+3. **Return time** – Actual return datetime
+4. **Usage feedback** – Key status and notes
+5. **Service rating** – Satisfaction survey
+6. **Confirm return**
 
-## 🎨 界面预览
-
-### 设计特色
-- **深色科技风格** - 黑色渐变背景，营造专业科技感
-- **霓虹色彩** - 青色、蓝色、紫色的渐变效果
-- **动画粒子** - 动态背景粒子，增加视觉吸引力
-- **毛玻璃效果** - 半透明模糊背景，提升层次感
-- **响应式布局** - 自适应各种屏幕尺寸
-
-### 主要颜色方案
-- **主色调**：青色 (`#00ffff`) - 科技感、现代感
-- **辅助色**：蓝色 (`#0080ff`) - 稳定、可靠
-- **强调色**：紫色 (`#8000ff`) - 创新、未来感
-- **背景色**：深色渐变 (`#0c0c0c` → `#1a1a2e` → `#16213e`)
+### Validation Rules
+- Required fields highlighted in forms
+- ID formats checked for students/teachers
+- Phone validation for teachers
+- Room numbers must be 3 digits
 
 ---
 
@@ -168,6 +240,27 @@ npx serve
   - 动画控制
 
 ### 浏览器兼容性
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
+
+## 💻 Tech Stack
+
+### Frontend
+- **HTML5** - Semantic structure
+- **CSS3** - Modern styles and animations
+  - Flexbox & Grid layouts
+  - CSS animations and transitions
+  - Custom scrollbars
+  - Responsive media queries
+- **Vanilla JavaScript** - Zero dependencies
+  - DOM manipulation
+  - Event handling
+  - Form validation
+  - Animation control
+
+### Browser Support
 - Chrome 60+
 - Firefox 55+
 - Safari 12+
@@ -203,6 +296,32 @@ npx serve
 - 增加新的功能模块
 - 自定义样式主题
 
+### Development Notes
+- **Modular design** - Clear separation of concerns
+- **Detailed comments** - Key logic is documented
+- **Consistent style** - Unified naming and formatting
+- **No dependencies** - Pure vanilla implementation
+
+### Core Modules
+```javascript
+// Key modules
+- initializeApp()            // App initialization
+- initializeFormValidation() // Form validation setup
+- handleBorrowSubmit()       // Borrow submission
+- handleReturnSubmit()       // Return submission
+- validateBorrowForm()       // Borrow form validation
+- validateReturnForm()       // Return form validation
+- updateSystemStatus()       // Status updates
+- showCompletionAnimation()  // Completion animation
+```
+
+### Customization
+The modular architecture makes it easy to extend:
+- Add new validation rules
+- Integrate backend APIs
+- Introduce new feature modules
+- Customize themes and styles
+
 ---
 
 ## 📝 版本历史
@@ -214,6 +333,14 @@ npx serve
 - ✅ 响应式设计
 - ✅ 表单验证系统
 - ✅ 现代化UI设计
+
+### v1.0.0 (2025-01)
+- ✅ Initial release
+- ✅ Complete borrow/return flows
+- ✅ Bilingual support (Chinese/English)
+- ✅ Responsive design
+- ✅ Form validation system
+- ✅ Modern UI design
 
 ---
 
@@ -235,11 +362,30 @@ npx serve
 - ⚡ 性能优化
 - 🌐 多语言支持
 
+## 🤝 Contributing
+
+Contributions are welcome! Suggested steps:
+1. **Fork the repo**
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push the branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
+### How to Contribute
+- 🐛 Fix bugs
+- ✨ Add features
+- 📝 Improve docs
+- 🎨 Enhance UI/UX
+- ⚡ Optimize performance
+- 🌐 Add more languages
+
 ---
 
 ## 📄 许可证
 
 本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
@@ -248,25 +394,31 @@ npx serve
 - 感谢所有为这个项目做出贡献的开发者
 - 特别感谢济外国际提供的项目背景和需求
 
+Thanks to all contributors, and special thanks to Jiwai International for the project background and requirements.
+
 ---
 
 ## 📮 联系方式
 
-如有问题或建议，欢迎通过以下方式联系：
-
 - 📧 提交 Issue
 - 💬 参与讨论
 - ⭐ Star 本项目
+
+- 📧 Submit an Issue
+- 💬 Join the discussion
+- ⭐ Star this repo
 
 ---
 
 <div align="center">
 
 **⭐ 如果这个项目对你有帮助，请给它一个 Star！**
+**⭐ If you like this project, please give it a Star!**
 
 Made with ❤️ by [Your Name]
 
 [⬆ 返回顶部](#-济外国际智能钥匙柜管理系统)
+[⬆ Back to Top](#-jiwai-international-smart-key-cabinet-management-system)
 
 </div>
 
