@@ -1,5 +1,5 @@
 # 🔑 济外国际智能钥匙柜管理系统
-# 🔑 Jiwai International Smart Key Cabinet Management System
+# 🔑 JNFLSIC Smart Key Cabinet Management System
 
 <div align="center">
 
@@ -415,16 +415,12 @@ Thanks to all contributors, and special thanks to Jiwai International for the pr
 **⭐ 如果这个项目对你有帮助，请给它一个 Star！**
 **⭐ If you like this project, please give it a Star!**
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Alvin
+
 
 [⬆ 返回顶部](#-济外国际智能钥匙柜管理系统)
 [⬆ Back to Top](#-jiwai-international-smart-key-cabinet-management-system)
 
 </div>
 
-# -_for-JNFLS
-# -_for-JNFLS
-# -_for-JNFLS
-# -_Smart-Key-Cabinet-Management-System
-# -_Smart-Key-Cabinet-Management-System
-# -_Smart-Key-Cabinet-Management-System
+
